@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+}
+.container {
+    max-width: 1290px;
+    margin: 0 auto;
+}
+img {
+    width: 100%;
+}
+/*slick*/
+
+
+/*owl*/
+.owl-item {
+    height: 200px;
+}
+/*lightbox*/
+.lightbox a {
+   width: 50%;
+}
+
+.lightbox .container {
+    display: flex;
+    gap: 30px;
+}
+/*masonry*/
+.grid {
+    display: grid;
+}
+.grid-item {
+    width: 150px;
+}
+.grid-item--width2 {
+    width: 400px;
+}

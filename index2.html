@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>slick</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+</head>
+<body>
+<div class="responsive">
+    <div class="slider-item">
+        <img src="img/bottel.jpg">
+    </div>
+    <div class="slider-item">
+        <img src="img/cat.jpg">
+    </div>
+    <div class="slider-item">
+        <img src="img/fly.jpg">
+    </div>
+    <div class="slider-item">
+        <img src="img/frut.jpg">
+    </div>
+    <div class="slider-item">
+        <img src="img/sea.jpg">
+    </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+<script src="slick/slick.min.js"></script>
+<script src="slick/slick.js"></script>
+<script>
+    $('.responsive').slick({
+        dots: false,
+        infinite: false,
+        autoplaySpeed: 1000,
+        autoplay: true,
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                    infinite: true,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+            // You can unslick at a given breakpoint now by adding:
+            // settings: "unslick"
+            // instead of a settings object
+        ]
+    });
+</script>
+</body>
+</html>

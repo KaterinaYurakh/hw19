@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>lightbox</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/index.css">
+    <link type = "text/css" rel = "stylesheet" href = "magiczoom/magiczoom.css" />
+
+</head>
+<body>
+<div class="lightbox">
+<div class="container">
+    <a data-fslightbox="gallery" href="img/frut.jpg">
+        <img src="img/frut.jpg">
+    </a>
+    <a data-fslightbox="gallery" href="img/bottel.jpg">
+        <img src="img/bottel.jpg">
+    </a>
+</div>
+</div>
+<div class="masonry">
+    <div class="container">
+        <div class="grid">
+            <div class="grid-item">
+                <img src="img/cat.jpg">
+            </div>
+            <div class="grid-item grid-item--width2">
+                <img src="img/cat4.jpg">
+            </div>
+            <div class="grid-item">
+                <img src="img/catty.jpg">
+            </div>
+            <div class="grid-item">
+                <img src="img/kis.jpg">
+            </div>
+            <div class="grid-item">
+                <img src="img/kis2.jpg">
+            </div>
+            <div class="grid-item">
+                <img src="img/may.jpg">
+            </div>
+            <div class="grid-item grid-item--width2">
+                <img src="img/may2.jpg">
+            </div>
+            <div class="grid-item">
+                <img src="img/family.jpg">
+            </div>
+        </div>
+
+    </div>
+</div>
+<div class="zoom">
+    <div class="container">
+        <a href = "img/sea.jpg" class = "MagicZoom" ><img src = "img/sea.jpg"></a>
+    </div>
+</div>
+
+
+
+<script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+<script src="lightbox/fslightbox.js"></script>
+<script src="masonry/masonry.pkgd.min.js"></script>
+<script>
+    $('.grid').masonry({
+        itemSelector: '.grid-item',
+        columnWidth: 160
+    });
+</script>
+<script type = "text/javascript" src = "magiczoom/magiczoom.js" ></script>
+
+</body>
+</html>
